@@ -9,12 +9,12 @@ const expected = 142
 
 test('Day one part one sample', () => {
   const puzzle = new PuzzleOne(testData)
-  expect(puzzle.partOne(testData)).toEqual(expected)
+  expect(puzzle.partOne()).toEqual(expected)
 })
 
 test('Day one part one final', () => {
   const puzzle = new PuzzleOne(dayOne)
-  expect(puzzle.partOne(testData)).toBe(55834)
+  expect(puzzle.partOne()).toBe(55834)
 })
 
 const testData2 = `two1nine

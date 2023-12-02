@@ -18,17 +18,22 @@ class PuzzleOne {
   partTwo() {
     const lines = this.input.split('\n')
     return lines.reduce((sum, line) => {
+      // Regex matcher to find integer and their string representations
       const matcher = /[0-9]|(?=(one))|(?=(two))|(?=(three))|(?=(four))|(?=(five))|(?=(six))|(?=(seven))|(?=(eight))|(?=(nine))/g
       const matches = line.matchAll(matcher)
       const matcharray = Array.from(matches)
+      // Get the first and last matches from the regex results
       const firstMatch = matcharray[0]
       const lastMatch = matcharray[matcharray.length - 1]
+      // Get the value of the first and last matches
       const firstNumber = this.getMatchValue(firstMatch)
       const lastNumber = this.getMatchValue(lastMatch)
       const value = `${this.numberMaker(firstNumber)}${this.numberMaker(lastNumber)}`
       return sum + parseInt(value)
     }, 0)
   }
+
+  // Gets the matched value from the regex matcher array
   getMatchValue(matchItem){
     if(matchItem[0] != ''){
       return matchItem[0]
@@ -40,6 +45,8 @@ class PuzzleOne {
       }
     }
   }
+
+  // Converts the string number to an integer
   numberMaker(input){
     switch(input){
       case 'one':
