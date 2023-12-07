@@ -16,7 +16,7 @@ class PuzzleFive{
       return minLocation
   }
 
-  partTwoAlt(){
+  partTwo(){
     const seedRanges = [];
     for (let i = 0; i < this.input.seeds.length; i += 2) {
       const start = this.input.seeds[i]
