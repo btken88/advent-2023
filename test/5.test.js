@@ -36,24 +36,24 @@ humidity-to-location map:
 56 93 4`
 const expectedOne = 35
 
-// test('Day five part one sample', () => {
-//   const puzzle = new PuzzleFive(sampleData)
-//   expect(puzzle.partOne()).toEqual(expectedOne)
-// })
+test('Day five part one sample', () => {
+  const puzzle = new PuzzleFive(sampleData)
+  expect(puzzle.partOne()).toEqual(expectedOne)
+})
 
-// test('Day five part one final', () => {
-//   const puzzle = new PuzzleFive(dayFive)
-//   expect(puzzle.partOne()).toBe(650599855)
-// })
+test('Day five part one final', () => {
+  const puzzle = new PuzzleFive(dayFive)
+  expect(puzzle.partOne()).toBe(650599855)
+})
 
 const expectedTwo = 46
 
 test('Day five part two sample', () => {
   const puzzle = new PuzzleFive(sampleData)
-  expect(puzzle.partTwoAlt()).toEqual(expectedTwo)
+  expect(puzzle.partTwo()).toEqual(expectedTwo)
 })
 
 test('Day five part two final', () => {
   const puzzle = new PuzzleFive(dayFive)
-  expect(puzzle.partTwoAlt()).toEqual(1240035)
+  expect(puzzle.partTwo()).toEqual(1240035)
 })
