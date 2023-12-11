@@ -44,11 +44,9 @@ class PuzzleSeven {
   partTwo() {
     let sum = 0;
     const rankedList = [...this.inputTwo.scoreLists[1], ...this.inputTwo.scoreLists[2], ...this.inputTwo.scoreLists[3], ...this.inputTwo.scoreLists[4],...this.inputTwo.scoreLists[5], ...this.inputTwo.scoreLists[6], ...this.inputTwo.scoreLists[7]]
-    // console.log(rankedList)
     for (let i = 0; i < rankedList.length; i++) {
       sum = sum + rankedList[i].bet * (i + 1)
     }
-    console.log(rankedList)
     return sum
   }
 

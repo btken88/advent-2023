@@ -54,5 +54,5 @@ test('Day seven part two sample two', () => {
 
 test('Day seven part two final', () => {
   const puzzle = new PuzzleSeven(daySeven)
-  expect(puzzle.partTwo(daySeven)).toEqual(0)
+  expect(puzzle.partTwo(daySeven)).toEqual(254115617)
 })
